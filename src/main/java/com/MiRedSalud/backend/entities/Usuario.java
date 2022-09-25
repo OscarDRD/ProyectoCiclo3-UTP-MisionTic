@@ -17,7 +17,7 @@ public class Usuario {
     private int id;
 
     @Column(nullable = false)
-    private String name;
+    private String nombre;
 
     @Column(nullable = false)
     private int edad;
@@ -39,6 +39,10 @@ public class Usuario {
     @OneToMany(fetch = FetchType.LAZY)
     @JoinColumn(nullable = false)
     private List<Familiar> familia;
+
+    @ManyToMany(fetch = FetchType.LAZY)
+    @JoinColumn(nullable = false)
+    private List<TipoParentesco> parentesco;
 
     public boolean checkPassword(String password){
         return this.password.equals(password);

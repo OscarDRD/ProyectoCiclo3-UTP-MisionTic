@@ -1,8 +1,5 @@
 package com.mireddesalud.MiRedSalud.backend.entities;
 
-import com.mireddesalud.MiRedSalud.backend.entities.Enfermedades;
-import com.mireddesalud.MiRedSalud.backend.entities.TipoParendesco;
-import com.mireddesalud.MiRedSalud.backend.entities.Familiares;
 
 import java.util.List;
 

@@ -12,7 +12,6 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-
 public class Familiar {
     @Id
     @Column(nullable = false, unique = true)
